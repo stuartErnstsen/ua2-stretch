@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outdoor Store</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="header-top">
@@ -20,15 +23,15 @@
             </nav>
         </div>
 
-        <div class="form-container">
+        <div id="form-contain" class="form-container">
             <p class="sub-intro">subscribe to our<br>mailing list</p>
-            <h3 id="close-form">X</h3>
+            <h3 id="close-form" onclick="toggler()">X</h3>
 
             <form class="form">
-                <label for="name" >enter your name:</label>
-                <input type="text" placeholder="name" id="name"/>
+                <label for="name">enter your name:</label>
+                <input type="text" placeholder="name" id="name" />
                 <label for="email">enter your email:</label>
-                <input type="text" placeholder="email"/>
+                <input type="text" placeholder="email" id="email" />
                 <button>sign up</button>
             </form>
         </div>
@@ -39,18 +42,20 @@
 
         <section>
             <div class="product-card">
-                <img src="./assets/hat.jpeg" alt="hat" class="product-img"/>
-                <button>add to cart</button>
+                <img src="./assets/hat.jpeg" alt="hat" class="product-img" />
+                <button onclick="cartUpdate()">add to cart</button>
             </div>
             <div class="product-card">
-                <img src="./assets/backpack.jpeg" alt="backpack" class="product-img"/>
-                <button>add to cart</button>
+                <img src="./assets/backpack.jpeg" alt="backpack" class="product-img" />
+                <button onclick="cartUpdate()">add to cart</button>
             </div>
             <div class="product-card">
-                <img src="./assets/shoe.jpeg" alt="shoe" class="product-img"/>
-                <button>add to cart</button>
+                <img src="./assets/shoe.jpeg" alt="shoe" class="product-img" />
+                <button onclick="cartUpdate()">add to cart</button>
             </div>
         </section>
     </main>
 </body>
+<script src="index.js"></script>
+
 </html>
